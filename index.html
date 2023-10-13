@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style>
+        .b-border{
+            border-left: 5px solid #547ef9;
+            border-right: 5px solid #547ef9;
+        }
+        .b-border i{
+            font-size: 25px;
+        }
+       </style>
+       
+    <title>BUDGET APPLICATION</title>
+</head>
+<body>
+    <!-- start upersection codding -->
+<div class="container">
+    <div class="row mt-5" >
+        <div class="col-2"></div>
+        <div class="col-8" style="border-top: 5px solid #547ef9;">
+            <h1 style="color : #547ef9 ">BUDGET APPLICATION</h1>
+            <div class="row">
+                <div class="col-md-4 shadow-lg p-4" style="border-left: 5px solid #547ef9;">
+                    <form class="form">
+                        <input type="number" class="form-control mb-3" id="budget" placeholder="Enter Budget">
+                        <button id="budget-btn" style="background-color:  #547ef9;" class="btn text-white">Set budget</button>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7 shadow-lg p-4" style="border-right: 5px solid #547ef9;">
+                    <form class="form">
+                        <input type="text" class="form-control mb-3" id="title" placeholder="Enter Product Title">
+                        <input type="number" class="form-control mb-3" id="cost" placeholder="Enter Cost of Product">
+                        <button style="background-color: #547ef9;" class="btn text-white" id="product-btn">Set Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+        <!-- start middle section codding -->
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 p-4 mt-5" style="background-color: #547ef9;">
+                    <div class="row">
+                        <div class="col-md-4 text-center text-white">
+                            <h4>Total Budget</h4>
+                            <p id="total-budget">0</p>
+                        </div>
+                        <div class="col-md-4 text-center text-white">
+                            <h4>Total Expence</h4>
+                            <p id="expence">0</p>
+                        </div>
+                        <div class="col-md-4 text-center text-white">
+                            <h4>Total Balance</h4>
+                            <p id="balance">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        <!-- end middle section codding -->
+
+        <div class="row mt-5" >
+            <div class="col-md-2"></div>
+            <div class="col-md-8 mb-3" style="border-top: 5px solid #547ef9;border-bottom: 5px solid #547ef9;">
+                <div id="expence-list">
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+</div>
+    <!-- end upersection codding -->
+    <script src="js/main.js"></script>
+</body>
+</html>
